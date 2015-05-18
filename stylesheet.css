@@ -1,5 +1,7 @@
 .jumbotron {
 	margin-top: 70px;
+	padding: 25px,20px;
+	font-family: 'Signika Negative', sans-serif;
 }
 
 .panel-heading{
@@ -23,7 +25,8 @@
 
 #photo{
 	border: 6px gray solid;
-	height: 170px;
+	height: 220px;
+	margin-left: 40px;
 }
 
 body {
