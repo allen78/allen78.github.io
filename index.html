@@ -1,14 +1,142 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
+	<title>Allen Chen</title>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap.min.css">
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
-	<script src="myScript.js"></script>
-	<script>
-	</script>
+	<script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/js/bootstrap.min.js"></script>
+	<script src="myScript.js"></script>	
+	<link href="stylesheet.css" rel="stylesheet" type="text/css" />
 </head>
 <body>
-	<p>歡迎來到我的烘培雞</p>
-	<button>Click Me!</button>
-	<img src="img/mega.png" style="height:200px;display:none">
+	<nav class="navbar navbar-default navbar-fixed-top">
+	  <div class="container-fluid">
+	    <div class="navbar-header">
+		    <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+	        <span class="icon-bar"></span>
+	        <span class="icon-bar"></span>
+	        <span class="icon-bar"></span> 
+	      </button>
+	      <a class="navbar-brand" href="#">Allen's portfolio</a>
+	    </div>
+	    <div class="collapse navbar-collapse" id="myNavbar">
+	      <ul class="nav navbar-nav">
+	        <li class="active"><a href="#"><span class="glyphicon glyphicon-home"></span></a></li>
+	        <li><a href="#education">Education</a></li>
+	        <li><a href="#workExperience">Work Experience</a></li> 
+	        <li><a href="#skills">Technical Skills</a></li> 
+	        <li><a href="#projects">School Projects</a></li> 
+	      </ul>
+	      <ul class="nav navbar-nav navbar-right">
+	        <li><a href="#contact"><span class="glyphicon glyphicon-user"></span>Contact</a></li>
+	      </ul>
+	    </div>
+	  </div>
+	</nav>
+
+	<div class="container">
+	  <div class="jumbotron">
+	  	<div class="row">
+	  		<div class="col-sm-4">
+	  			<img id="photo"class="img-rounded" src="img/Allen.jpg" >
+	  		</div>
+	  		<div class="col-sm-8">
+	  			<h1>Allen Chen </h1> 
+	  			<h2><small>Master's Graduate at University of Texas at Dallas</small></h2>
+	  		</div>
+	  	</div>
+	  </div>
+	</div>
+	<div class="container">
+	    <div class="panel panel-info">
+	      <div class="panel-heading">Summary</div>
+	      <div class="panel-body">I am a recent master’s graduate in Computer Science from the University of Texas at Dallas.  My primary programming language expertise is in Java.  I am currently seeking a Front End Developer position in the San Francisco Bay Area.</div>
+	    </div>
+	    <div id="education" class="panel panel-info">
+	      <div class="panel-heading">Education</div>
+	      <div class="panel-body">
+			    <h4>Master in Computer Science  <small>Dec 2014</small></h4>
+			    <p>- The University of Texas at Dallas, Richardson, Texas.	GPA:3.58</p>
+			    <h4>Bachelor of Business Administration in Information Management  <small>Jun 2010</small></h4>
+			    <p>- Yuan Ze University, Taoyuan, Taiwan</p>
+	      </div>
+	    </div>
+	    <div id="workExperience"class="panel panel-info">
+	      <div class="panel-heading">Work Experience</div>
+	      <div class="panel-body">
+	      	<h4><a href="http://www.htc.com" target="_blank">HTC</a>, <small>Online Communication team, intern, Taoyuan, Taiwan. Feb 2009 - Jul 2010</small></h4>
+	      	<p>Responsibilities: Webpage maintenance, including updating, testing, and debugging.</p>
+	      </div>
+	    </div>
+	    <div id="skills" class="panel panel-info">
+	      <div class="panel-heading">Technical Skills</div>
+	      <div class="panel-body">
+	      	<h4>Basic : 
+	      		<span class="label label-info">Bootstrap</span>
+	      		<span class="label label-info">Git</span>
+	      		<span class="label label-info">JQuery</span>
+	      		<span class="label label-info">JavaScript</span>
+	      		<span class="label label-info">SQL</span>
+	      		<span class="label label-info">Hadoop</span>
+	      	</h4>
+	      	<h4>Intermediate : 
+	      		<span class="label label-primary">Java</span>
+	      		<span class="label label-primary">HTML5</span>
+	      		<span class="label label-primary">CSS3</span>
+	      	</h4>
+	      </div>
+	    </div>
+	    <div id="projects" class="panel panel-info">
+	    	<div class="panel-heading">School Projects</div>
+	    	<ul class="nav nav-pills">
+			  <li class="active"><a data-toggle="tab" href="#data">BigData</a></li>
+			  <li><a data-toggle="tab" href="#database">Database</a></li>
+			  <li><a data-toggle="tab" href="#telecom">Telecommunication</a></li>
+			</ul>
+
+			<div class="tab-content">
+			  <div id="data" class="tab-pane fade in active">
+			    <h4>Online Website Finger Printing using Spark, 2014 Fall</h4>
+			    <p>Explored machine learning techniques that allows determination of internet traffic by observing only the meta data of IP packets.</p>
+			  </div>
+			  <div id="database" class="tab-pane fade">
+			    <h4>Insurance Management System (with Oracle relational database), 2013 Spring</h4>
+			    <p>Designed, developed, and tested Insurance Management System that provides insurance services to clients, insurance companies and agents based on combined database.</p>
+			  </div>
+			  <div id="telecom" class="tab-pane fade">
+			    <h4>Sip UA Remote Controller</h4>
+			    <p>Utilized a web browser to obtain Java Applet from HTTP Server. Then used Java Applet to remotely control the Sip UA on another laptop and make a call with a third laptop.</p>
+			  </div>
+			</div>
+	    </div>
+	    <div id="contact" class="panel panel-info">
+	      <div class="panel-heading">Contact</div>
+	      <div class="panel-body">
+	      	<table class="table table-striped">
+			    <tbody>
+			      <tr>
+			        <td><span class="glyphicon glyphicon-phone"></span> Phone</td>
+			        <td>(214) 738 - 1742</td>
+			      </tr>
+			      <tr>
+			        <td><span class="glyphicon glyphicon-envelope"></span> Email</td>
+			        <td>allenchen1988@gmail.com</td>
+			      </tr>
+			      <tr>
+			        <td>LinkedIn</td>
+			        <td><a href="https://www.linkedin.com/pub/allen-chen/8a/142/358" target="blank">https://www.linkedin.com/pub/allen-chen/8a/142/358</a></td>
+			      </tr>
+			      <tr>
+			        <td>GitHub</td>
+			        <td><a href="https://github.com/allen78" target="blank">https://github.com/allen78</a></td>
+			      </tr>
+			    </tbody>
+			  </table>
+	      </div>
+	    </div>
+	</div>
+
 </body>
 </html>
