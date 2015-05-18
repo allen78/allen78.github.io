@@ -1,7 +1,7 @@
 .jumbotron {
 	margin-top: 70px;
 	padding: 25px,20px;
-	font-family: 'Signika Negative', sans-serif;
+	font-family: 'Lora', serif;
 }
 
 .panel-heading{
@@ -27,6 +27,16 @@
 	border: 6px gray solid;
 	height: 220px;
 	margin-left: 40px;
+}
+
+#visa{
+	background-color: rgb(223, 240, 216);
+}
+
+#visa span{
+	font-size: 17px;
+	font-weight: bold;
+	color: rgb(60,118,65);
 }
 
 body {
